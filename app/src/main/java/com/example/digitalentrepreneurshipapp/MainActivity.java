@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         loadFragment(new WorkoutsFragment(), true); //load fragment when first opened app
     }
 
-    private void loadFragment(Fragment fragment, boolean isAppInitialised) {
+    public void loadFragment(Fragment fragment, boolean isAppInitialised) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 

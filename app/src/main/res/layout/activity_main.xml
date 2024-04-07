@@ -23,12 +23,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottomnavmenu"
-        android:backgroundTint="@color/secondary"
         android:background="@color/primary"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
-        app:itemTextAppearanceActive="@color/tertiary"
-        app:itemActiveIndicatorStyle="@color/tertiary"
-        app:itemRippleColor="@color/secondary"/>
+        app:itemIconTint="@drawable/icon_tint_selector"
+        app:itemTextColor="@drawable/icon_tint_selector"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
