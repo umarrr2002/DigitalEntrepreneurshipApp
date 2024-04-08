@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -18,7 +19,7 @@ public class ChecklistFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_checklist, container, false);
 
-        Button button = (Button) view.findViewById(R.id.buttonback);
+        ImageButton button = (ImageButton) view.findViewById(R.id.buttonbackchecklisttogoals);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

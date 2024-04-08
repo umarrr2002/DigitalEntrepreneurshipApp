@@ -6,30 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".ChecklistFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:gravity="center"
-        android:text="Checklist"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:textColor="@color/primary"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/buttonback"
+        <ImageButton
+            android:id="@+id/buttonbackchecklisttogoals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/primary"
+            android:contentDescription="Back Arrow"
+            android:src="@drawable/iconarrowback"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Checklist"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/checklistTitle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:text="Back"
+        android:layout_marginTop="64dp"
+        android:hint="Title"
+        android:textColorHint="@color/lightgrey"
+        app:layout_constraintEnd_toStartOf="@+id/checklistDeadline1"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <EditText
+        android:id="@+id/checklistDescription1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Description"
+        android:textColorHint="@color/lightgrey"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <EditText
+        android:id="@+id/checklistDeadline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Deadline"
+        android:textColorHint="@color/lightgrey"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/checklistPriority1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
         android:textAllCaps="false"
-        android:textSize="20dp"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/iconstarlowpriority"
+        app:layout_constraintEnd_toStartOf="@+id/checklistPriority1"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

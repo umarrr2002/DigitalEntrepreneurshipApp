@@ -4,21 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GoalsFragment">
+    tools:context=".ExercisesFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/primary">
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/buttonbackexercisestoworkouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/primary"
+            android:contentDescription="Back Arrow"
+            android:src="@drawable/iconarrowback"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Goals"
+            android:text="Exercises"
             android:textColor="@color/white"
             android:textSize="32sp"
             android:textStyle="bold"
@@ -27,17 +41,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/FABviewChecklist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        android:layout_marginRight="20dp"
-        android:backgroundTint="@color/secondary"
-        android:clickable="true"
-        android:src="@drawable/iconchecklist"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

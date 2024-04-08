@@ -13,17 +13,17 @@ import android.widget.ImageButton;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class ProfileFragment extends Fragment {
+public class SettingsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_settings, container, false);
 
-        ImageButton imageButton = (ImageButton) view.findViewById(R.id.buttonsettings);
-        imageButton.setOnClickListener(new View.OnClickListener() {
+        ImageButton button = (ImageButton) view.findViewById(R.id.buttonbacksettingstoprofile);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new SettingsFragment();
+                Fragment fragment = new ProfileFragment();
                 FragmentTransaction transaction=getFragmentManager().beginTransaction();
                 transaction.replace(R.id.frameLayout,fragment);
                 transaction.addToBackStack(null);
