@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottomnavmenu"
-        android:background="@color/primary"
+        android:background="@color/bluedark"
         app:itemIconTint="@drawable/icon_tint_selector"
         app:itemTextColor="@drawable/icon_tint_selector"/>
 

@@ -1,7 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.DigitalEntrepreneurshipApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.DigitalEntrepreneurshipApp" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <item name="colorPrimary">@color/bluedark</item>
+        <item name="colorSecondary">@color/bluemedi</item>
+        <item name="colorOnPrimary">@color/bluedark</item>
     </style>
+
+    <!-- Dark Mode -->
+    <style name="SCREEN">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">@color/bluedark</item>
+    </style>
+
+    <style name="BUTTON">
+        <item name="android:background">@color/bluedark</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.DigitalEntrepreneurshipApp" parent="Base.Theme.DigitalEntrepreneurshipApp" />
 </resources>

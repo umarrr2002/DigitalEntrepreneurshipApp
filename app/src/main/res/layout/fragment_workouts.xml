@@ -12,7 +12,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/primary">
+        android:background="@color/bluedark">
 
         <TextView
             android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
         android:layout_marginRight="20dp"
-        android:backgroundTint="@color/secondary"
+        android:backgroundTint="@color/bluemedi"
         android:clickable="true"
         android:src="@drawable/iconplus"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="160dp"
         android:layout_marginRight="20dp"
-        android:backgroundTint="@color/secondary"
+        android:backgroundTint="@color/bluemedi"
         android:clickable="true"
         android:src="@drawable/iconexercises"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="240dp"
         android:layout_marginRight="20dp"
-        android:backgroundTint="@color/secondary"
+        android:backgroundTint="@color/bluemedi"
         android:clickable="true"
         android:src="@drawable/iconmap"
         app:layout_constraintBottom_toBottomOf="parent"
