@@ -7,12 +7,13 @@
     tools:context=".AboutFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@color/bluedark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/bluedark">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
             android:id="@+id/buttonbackabouttosettings"
@@ -25,7 +26,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/white"/>
+            app:tint="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,5 +41,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <TextView
+            android:id="@+id/checklistTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/about_reps"
+            android:textColor="@color/bluedark"
+            android:textColorHint="@color/lightgrey"
+            android:textSize="20sp" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

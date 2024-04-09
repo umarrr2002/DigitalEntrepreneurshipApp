@@ -7,12 +7,13 @@
     tools:context=".NutritionFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@color/bluedark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/bluedark">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,6 +28,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonsearchforqrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/iconqrcodescanner"
+        android:drawableTint="@color/white"
+        android:padding="10dp"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/bluedark"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="290dp"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/FABviewMapCafes"

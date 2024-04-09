@@ -19,8 +19,8 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        ImageButton imageButton = (ImageButton) view.findViewById(R.id.buttonsettings);
-        imageButton.setOnClickListener(new View.OnClickListener() {
+        Button button = (Button) view.findViewById(R.id.buttonsettings);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Fragment fragment = new SettingsFragment();

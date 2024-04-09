@@ -2,4 +2,20 @@
     <string name="app_name">Reps</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about_reps">
+        Reps is a fitness app equipped with a diverse array of integrated features including body composition tracking,
+        a calendar &amp; journal, nutrition &amp; recipes, workouts &amp; exercises, goal tracking &amp; checklists, exploration of nearby
+        gyms and cafes. Reps merges and consolidates the scattered functionality of most current fitness apps on the market
+        and eliminates the need for users to navigate multiple applications for distinct elements of fitness, as everything
+        is integrated into a singular app.
+        \n\n
+        Currently, the fitness apps on the market are designed to fulfil a singular requirement. Many fitness enthusiasts are
+        constrained to use multiple fitness apps for their individual and isolated features, such as goal tracking, exercise
+        and workout program regimes, nutrition logging and journaling. There is a gap in the market for
+        an app which fulfils all of these requirements, until now. Reps aims to combine all of elements of fitness into a
+        singular app, rendering the user a much more connected and convenient fitness experience as Reps negates the necessity
+        to use a multitude of divided apps.
+        \n\n\n\n\n\n
+    </string>
 </resources>
