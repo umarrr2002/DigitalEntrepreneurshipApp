@@ -30,6 +30,19 @@ public class ChecklistFragment extends Fragment {
                 transaction.commit();
             }
         });
+
+        FloatingActionButton floatingActionButton = (FloatingActionButton) view.findViewById(R.id.FABaddItemToChecklist);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new AddItemToChecklistFragment();
+                FragmentTransaction transaction=getFragmentManager().beginTransaction();
+                transaction.replace(R.id.frameLayout,fragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+
         return view;
     }
 }

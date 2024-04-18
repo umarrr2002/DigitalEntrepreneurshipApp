@@ -31,7 +31,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageviewprofilepicture"
+        android:id="@+id/profilepictureimageview"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="24dp"
@@ -50,12 +50,12 @@
         android:backgroundTint="@color/bluedark"
         android:contentDescription="Edit Profile Picture"
         android:src="@drawable/iconedit"
-        app:layout_constraintStart_toEndOf="@+id/imageviewprofilepicture"
-        app:layout_constraintTop_toBottomOf="@+id/imageviewprofilepicture"
+        app:layout_constraintStart_toEndOf="@+id/profilepictureimageview"
+        app:layout_constraintTop_toBottomOf="@+id/profilepictureimageview"
         app:tint="@color/white" />
 
     <TextView
-        android:id="@+id/edittextprofilename"
+        android:id="@+id/profilenametext"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -66,7 +66,7 @@
         android:textSize="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageviewprofilepicture" />
+        app:layout_constraintTop_toBottomOf="@+id/profilepictureimageview" />
 
     <ImageButton
         android:id="@+id/buttoneditprofilename"
@@ -78,8 +78,8 @@
         android:backgroundTint="@color/bluedark"
         android:contentDescription="Edit Profile Name"
         android:src="@drawable/iconedit"
-        app:layout_constraintStart_toEndOf="@+id/edittextprofilename"
-        app:layout_constraintTop_toBottomOf="@+id/edittextprofilename"
+        app:layout_constraintStart_toEndOf="@+id/profilenametext"
+        app:layout_constraintTop_toBottomOf="@+id/profilenametext"
         app:tint="@color/white" />
 
     <TextView
@@ -94,7 +94,7 @@
         android:textColorHint="@color/darkgrey"
         android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittextprofilename" />
+        app:layout_constraintTop_toBottomOf="@+id/profilenametext" />
 
     <TextView
         android:id="@+id/totalworkoutsloggednumber"
@@ -136,7 +136,7 @@
         android:textColorHint="@color/darkgrey"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittextprofilename" />
+        app:layout_constraintTop_toBottomOf="@+id/profilenametext" />
 
     <Button
         android:id="@+id/buttonupgradetopremium"
@@ -220,6 +220,6 @@
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittextprofilename" />
+        app:layout_constraintTop_toBottomOf="@+id/profilenametext" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

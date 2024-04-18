@@ -30,6 +30,18 @@ public class ProfileFragment extends Fragment {
                 transaction.commit();
             }
         });
+
+        Button button2 = (Button) view.findViewById(R.id.buttonfriends);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new FriendsFragment();
+                FragmentTransaction transaction=getFragmentManager().beginTransaction();
+                transaction.replace(R.id.frameLayout,fragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
         return view;
     }
 }

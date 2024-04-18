@@ -18,4 +18,142 @@
         to use a multitude of divided apps.
         \n\n\n\n\n\n
     </string>
+
+    <string-array name="exercise_title_txt">
+        <item>Bench Press</item>
+        <item>Lat Pulldown</item>
+        <item>Hack Squat</item>
+        <item>Bicep Curl</item>
+        <item>Pull-up</item>
+        <item>Tricep Dip</item>
+        <item>Romanian Deadlift</item>
+        <item>Treadmill Walk</item>
+        <item>Push-up</item>
+        <item>Cable Row</item>
+        <item>Overhead Press</item>
+    </string-array>
+
+    <string-array name="exercise_musclegroup_txt">
+        <item>Chest</item>
+        <item>Back</item>
+        <item>Quadriceps</item>
+        <item>Biceps</item>
+        <item>Back</item>
+        <item>Triceps</item>
+        <item>Hamstrings</item>
+        <item>N/A</item>
+        <item>Chest</item>
+        <item>Back</item>
+        <item>Shoulders</item>
+    </string-array>
+
+    <string-array name="exercise_workoutstyle_txt">
+        <item>Weightlifting</item>
+        <item>Weightlifting</item>
+        <item>Weightlifting</item>
+        <item>Weightlifting</item>
+        <item>Calisthenics</item>
+        <item>Calisthenics</item>
+        <item>Weightlifting</item>
+        <item>Cardiovascular</item>
+        <item>Calisthenics</item>
+        <item>Weightlifting</item>
+        <item>Weightlifting</item>
+    </string-array>
+
+    <string-array name="exercise_equipment_txt">
+        <item>Barbell</item>
+        <item>Machine</item>
+        <item>Machine</item>
+        <item>Barbell</item>
+        <item>Pull-up Bar</item>
+        <item>Dip Bars</item>
+        <item>Barbell</item>
+        <item>Machine</item>
+        <item>N/A</item>
+        <item>Machine</item>
+        <item>Dumbbells</item>
+    </string-array>
+
+    <!--- Workouts Array -->
+    <string name="workoutName1">HV Push</string>
+    <string name="workoutName2">Quick Legs</string>
+    <string name="workoutName3">3D Shoulders</string>
+    <string name="workoutName4">Arms Assault</string>
+    <string name="workoutName5">Anterior Upper</string>
+    <string name="workoutName6">Lower Posterior</string>
+    <string name="workoutName7">HV Posterior</string>
+    <string name="workoutName8">Midsection</string>
+    <string name="workoutName9">HV Pull</string>
+    <string name="workoutName10">Glute Builder</string>
+    <string name="workoutName11">Mass Tri-Force</string>
+    <string name="workoutName12">Back Blast</string>
+
+    <string name="workoutTargets1">Chest, Deltoids, Triceps</string>
+    <string name="workoutTargets2">Quadriceps, Hamstrings</string>
+    <string name="workoutTargets3">Deltoids</string>
+    <string name="workoutTargets4">Biceps, Triceps, Forearms</string>
+    <string name="workoutTargets5">Chest, Core</string>
+    <string name="workoutTargets6">Hamstrings, Calves</string>
+    <string name="workoutTargets7">Back, Triceps</string>
+    <string name="workoutTargets8">Core</string>
+    <string name="workoutTargets9">Back, Biceps, Forearms</string>
+    <string name="workoutTargets10">Glutes, Calves</string>
+    <string name="workoutTargets11">Triceps, Forearms</string>
+    <string name="workoutTargets12">Back</string>
+
+    <string name="workoutTime1">120min</string>
+    <string name="workoutTime2">60min</string>
+    <string name="workoutTime3">45min</string>
+    <string name="workoutTime4">45min</string>
+    <string name="workoutTime5">60min</string>
+    <string name="workoutTime6">90min</string>
+    <string name="workoutTime7">90min</string>
+    <string name="workoutTime8">45min</string>
+    <string name="workoutTime9">120min</string>
+    <string name="workoutTime10">60min</string>
+    <string name="workoutTime11">45min</string>
+    <string name="workoutTime12">30min</string>
+
+    <!--- Workouts Array -->
+    <string name="friendName1">Liam Holdsworth</string>
+    <string name="friendName2">Ben Durkin</string>
+    <string name="friendName3">Saraa Khan</string>
+    <string name="friendName4">Alex Garcia</string>
+    <string name="friendName5">Megan Harrison</string>
+    <string name="friendName6">Aaron Brown</string>
+    <string name="friendName7">Dillon Chudasama</string>
+    <string name="friendName8">Lucas Broadbent</string>
+    <string name="friendName9">Halima Wasim</string>
+    <string name="friendName10">Aise Emmanuel</string>
+    <string name="friendName11">Samantha Evans</string>
+    <string name="friendName12">Joshua Clark</string>
+    <string name="friendName13">Noah Wilson</string>
+    <string name="friendName14">Kate Patel</string>
+    <string name="friendName15">Lee Nicholls</string>
+    <string name="friendName16">Anna Walker</string>
+
+    <string name="friendScore1">98</string>
+    <string name="friendScore2">125</string>
+    <string name="friendScore3">88</string>
+    <string name="friendScore4">78</string>
+    <string name="friendScore5">230</string>
+    <string name="friendScore6">26</string>
+    <string name="friendScore7">0</string>
+    <string name="friendScore8">225</string>
+    <string name="friendScore9">25</string>
+    <string name="friendScore10">63</string>
+    <string name="friendScore11">66</string>
+    <string name="friendScore12">253</string>
+    <string name="friendScore13">11</string>
+    <string name="friendScore14">122</string>
+    <string name="friendScore15">43</string>
+    <string name="friendScore16">99</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
 </resources>

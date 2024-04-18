@@ -27,33 +27,257 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/buttonmapnutrition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/bluedark"
+            android:contentDescription="Nutrition Map"
+            android:src="@drawable/iconmap"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <TextView
+        android:id="@+id/remainingcaloriestext"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Remaining Calories"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgrey"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+    <TextView
+        android:id="@+id/remainingcaloriesvalue"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgrey"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remainingcaloriestext" />
+
+    <ImageButton
+        android:id="@+id/buttoneditprofilename"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/circular_button"
+        android:backgroundTint="@color/bluedark"
+        android:contentDescription="Edit Profile Name"
+        android:src="@drawable/iconedit"
+        app:layout_constraintStart_toEndOf="@+id/remainingcaloriesvalue"
+        app:layout_constraintTop_toBottomOf="@+id/remainingcaloriesvalue"
+        app:tint="@color/white" />
+
     <Button
-        android:id="@+id/buttonsearchforqrcode"
+        android:id="@+id/buttonanalytics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/iconqrcodescanner"
-        android:drawableTint="@color/white"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/gold"
+        android:drawableLeft="@drawable/iconchartpie"
+        android:drawableTint="@color/black"
         android:padding="10dp"
-        android:text="Search"
+        android:text="Analytics"
         android:textAllCaps="false"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/bluedark"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="290dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remainingcaloriesvalue" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/FABviewMapCafes"
+    <TextView
+        android:id="@+id/breakfasttext"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Breakfast"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgrey"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonanalytics" />
+
+    <TextView
+        android:id="@+id/breakfastcalprocarfat"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="0kcal 0g 0g 0g"
+        android:textAlignment="center"
+        android:textColor="@color/bluemedi"
+        android:textColorHint="@color/darkgrey"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakfasttext" />
+
+    <Button
+        android:id="@+id/buttonaddbreakfast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        android:layout_marginRight="20dp"
-        android:backgroundTint="@color/bluemedi"
-        android:clickable="true"
-        android:src="@drawable/iconmap"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginEnd="40dp"
+        android:drawableLeft="@drawable/iconplus"
+        android:drawableTint="@color/white"
+        android:padding="10dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/bluedark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/breakfastcalprocarfat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/breakfasttext" />
+
+    <TextView
+        android:id="@+id/lunchtext"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="Lunch"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgrey"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakfastcalprocarfat" />
+
+    <TextView
+        android:id="@+id/lunchcalprocarfat"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="0kcal 0g 0g 0g"
+        android:textAlignment="center"
+        android:textColor="@color/bluemedi"
+        android:textColorHint="@color/darkgrey"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchtext" />
+
+    <Button
+        android:id="@+id/buttonaddlunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:drawableLeft="@drawable/iconplus"
+        android:drawableTint="@color/white"
+        android:padding="10dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/bluedark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lunchcalprocarfat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonaddbreakfast"
+        app:layout_constraintTop_toTopOf="@+id/lunchtext" />
+
+    <TextView
+        android:id="@+id/dinnertext"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="Dinner"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgrey"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchcalprocarfat" />
+
+    <TextView
+        android:id="@+id/dinnercalprocarfat"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="0kcal 0g 0g 0g"
+        android:textAlignment="center"
+        android:textColor="@color/bluemedi"
+        android:textColorHint="@color/darkgrey"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dinnertext" />
+
+    <Button
+        android:id="@+id/buttonadddinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:drawableLeft="@drawable/iconplus"
+        android:drawableTint="@color/white"
+        android:padding="10dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/bluedark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dinnercalprocarfat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonaddlunch"
+        app:layout_constraintTop_toTopOf="@+id/dinnertext" />
+
+    <TextView
+        android:id="@+id/watertext"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="Water"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgrey"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dinnercalprocarfat" />
+
+    <TextView
+        android:id="@+id/waterlitres"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="0.0L"
+        android:textAlignment="center"
+        android:textColor="@color/bluemedi"
+        android:textColorHint="@color/darkgrey"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/watertext" />
+
+    <Button
+        android:id="@+id/buttonaddwater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:drawableLeft="@drawable/iconplus"
+        android:drawableTint="@color/white"
+        android:padding="10dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/bluedark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/waterlitres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonadddinner"
+        app:layout_constraintTop_toTopOf="@+id/watertext" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

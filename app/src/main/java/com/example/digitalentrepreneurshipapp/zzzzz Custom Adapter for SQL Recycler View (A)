@@ -1,0 +1,86 @@
+package com.example.exerciserecyclerview;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+
+public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
+
+    private Context context;
+    Activity activity;
+    private ArrayList exercise_id, exercise_name, exercise_function, exercise_target, exercise_equipment;
+
+    CustomAdapter(Activity activity, Context context, ArrayList exercise_id, ArrayList exercise_name, ArrayList exercise_function, ArrayList exercise_target, ArrayList exercise_equipment){
+        this.activity = activity;
+        this.context = context;
+        this.exercise_id = exercise_id;
+        this.exercise_name = exercise_name;
+        this.exercise_function = exercise_function;
+        this.exercise_target = exercise_target;
+        this.exercise_equipment = exercise_equipment;
+    }
+
+    @NonNull
+    @Override
+    public CustomAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = inflater.inflate(R.layout.my_row, parent, false);
+        return new MyViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull CustomAdapter.MyViewHolder holder, final int position) {
+
+        holder.exercise_id_txt.setText(String.valueOf(exercise_id.get(position)));
+        holder.exercise_name_txt.setText(String.valueOf(exercise_name.get(position)));
+        holder.exercise_function_txt.setText(String.valueOf(exercise_function.get(position)));
+        holder.target_muscles_txt.setText(String.valueOf(exercise_target.get(position)));
+        holder.exercise_equipment_txt.setText(String.valueOf(exercise_equipment.get(position)));
+
+        holder.mainLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, UpdateActivity.class);
+                intent.putExtra("id", String.valueOf(exercise_id.get(position)));
+                intent.putExtra("name", String.valueOf(exercise_name.get(position)));
+                intent.putExtra("function", String.valueOf(exercise_function.get(position)));
+                intent.putExtra("targetmuscles", String.valueOf(exercise_target.get(position)));
+                intent.putExtra("equipment", String.valueOf(exercise_equipment.get(position)));
+                activity.startActivityForResult(intent, 1);
+            }
+        });
+    }
+
+    @Override
+    public int getItemCount() {
+        return exercise_id.size();
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+
+        TextView exercise_id_txt, exercise_name_txt, exercise_function_txt, target_muscles_txt, exercise_equipment_txt;
+        LinearLayout mainLayout;
+
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            exercise_id_txt = itemView.findViewById(R.id.exercise_id_txt);
+            exercise_name_txt = itemView.findViewById(R.id.exercise_name_txt);
+            exercise_function_txt = itemView.findViewById(R.id.exercise_function_txt);
+            target_muscles_txt = itemView.findViewById(R.id.target_muscles_txt);
+            exercise_equipment_txt = itemView.findViewById(R.id.equipment_required_txt);
+
+            mainLayout = itemView.findViewById(R.id.mainLayout);
+        }
+    }
+}

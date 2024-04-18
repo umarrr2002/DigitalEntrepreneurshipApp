@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -18,8 +19,8 @@ public class GoalsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_goals, container, false);
 
-        FloatingActionButton floatingActionButton = (FloatingActionButton) view.findViewById(R.id.FABviewChecklist);
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+        ImageButton imageButton = (ImageButton) view.findViewById(R.id.buttonviewchecklist);
+        imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                         Fragment fragment = new ChecklistFragment();
